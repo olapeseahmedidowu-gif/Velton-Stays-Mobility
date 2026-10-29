@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Velton Stays & Mobility | Shortlets, property and rides in Abuja</title>
+<meta name="description" content="Shortlet stays, property services, car hire, chauffeur rides and airport transfers in Abuja, Nigeria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAFAF7;--surface:#fff;--ink:#12263F;--text:#33445A;--muted:#66768A;--line:#DCE2E8;--brass:#A97A28;--brass-bg:#F3E9D2;--dark:#12263F;--on-dark:#F3F6F9;--on-brass:#fff;
+--h:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;--b:'Figtree','Segoe UI',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1522;--surface:#14233A;--ink:#F3F6F9;--text:#C3CEDB;--muted:#93A3B6;--line:#243650;--brass:#D9AE5E;--brass-bg:#2A2515;--dark:#0A111C;--on-brass:#12263F;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0C1522;--surface:#14233A;--ink:#F3F6F9;--text:#C3CEDB;--muted:#93A3B6;--line:#243650;--brass:#D9AE5E;--brass-bg:#2A2515;--dark:#0A111C;--on-brass:#12263F;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{height:100%;scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--b)}
+h1,h2,h3{font-family:var(--h);color:var(--ink);line-height:1.12;margin:0;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font:700 1.25rem var(--h);color:var(--ink);text-decoration:none}
+.logo span{color:var(--brass)}
+nav{display:flex;gap:22px;font-size:.95rem;font-weight:500}
+nav a{text-decoration:none;color:var(--text)}nav a:hover{color:var(--brass)}
+.btn{display:inline-block;background:var(--brass);color:var(--on-brass);font:600 1rem var(--b);padding:13px 22px;border-radius:8px;border:0;text-decoration:none;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+@media(max-width:760px){nav{display:none}}
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.2vw,3.9rem);font-weight:700}
+.hero p.lead{font-size:1.2rem;max-width:34em;margin:22px 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}
+.panel h2{font-size:1.4rem;margin-bottom:6px}
+.panel p{margin:0 0 16px;color:var(--muted);font-size:.95rem}
+.tabs{display:flex;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:4px;margin-bottom:16px}
+.tabs button{flex:1;border:0;background:transparent;font:600 .95rem var(--b);color:var(--text);padding:10px;border-radius:7px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--dark);color:var(--on-dark)}
+label{display:block;font-weight:600;font-size:.88rem;color:var(--ink);margin:12px 0 5px}
+input,select,textarea{width:100%;font:400 1rem var(--b);padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+textarea{min-height:76px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.panel .btn{width:100%;margin-top:18px}
+.note{font-size:.82rem;color:var(--muted);margin:10px 0 0}
+section{padding:72px 0}
+.band{background:var(--dark);color:var(--on-dark)}
+.band h2,.band h3{color:var(--on-dark)}
+.band p{color:#C3CEDB}
+.sec-head{max-width:40em;margin-bottom:36px}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem)}
+.sec-head p{margin:12px 0 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;border-top:1px solid var(--line)}
+.item{padding:24px 24px 26px 0;border-bottom:1px solid var(--line)}
+.item h3{font-size:1.2rem;margin-bottom:8px}
+.item p{margin:0;font-size:.98rem}
+.band .grid,.band .item{border-color:#2B4060}
+.band .item h3{color:var(--on-dark)}
+.hl{display:inline-block;background:var(--brass-bg);color:var(--brass);font-weight:600;font-size:.88rem;padding:3px 10px;border-radius:99px;margin-top:10px}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.steps li{counter-increment:s;position:relative;padding-top:52px}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:38px;height:38px;border-radius:50%;background:var(--brass);color:var(--on-brass);display:grid;place-items:center;font:700 1.05rem var(--h)}
+.steps h3{font-size:1.15rem;margin-bottom:6px}.steps p{margin:0;font-size:.97rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.chips span{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 16px;border-radius:99px;font-weight:500;font-size:.95rem}
+.contact dl{margin:20px 0 0;display:grid;gap:14px}
+.contact dt{font-weight:600;color:var(--ink);font-size:.9rem}
+.contact dd{margin:2px 0 0}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:.9rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:860px){.hero .wrap,.two{grid-template-columns:1fr}.hero{padding-top:36px}section{padding:52px 0}}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#top">Velton<span>.</span> Stays &amp; Mobility</a>
+<nav aria-label="Main"><a href="#stays">Stays &amp; property</a><a href="#mobility">Mobility</a><a href="#process">How it works</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="#enquire">Enquire</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Your stay and your ride, arranged in one place.</h1>
+<p class="lead">Velton connects individuals, families, visitors and businesses in Abuja with shortlet accommodation, property services and reliable transport. Clear communication from first enquiry to completion.</p>
+<div class="cta"><a class="btn" href="#enquire">Request options</a><a class="btn ghost" href="#stays">See our services</a></div>
+</div>
+
+<div class="panel" id="enquire">
+<h2>Tell us what you need</h2>
+<p>We reply with suitable options. Nothing is confirmed until you agree.</p>
+<div class="tabs" role="tablist">
+<button role="tab" id="t-stay" aria-selected="true" aria-controls="f">Book a stay</button>
+<button role="tab" id="t-ride" aria-selected="false" aria-controls="f">Book a ride</button>
+</div>
+<div id="f" role="tabpanel">
+<label for="name">Your name</label><input id="name" autocomplete="name">
+<div class="row">
+<div><label for="d1" id="l1">Check-in</label><input type="date" id="d1"></div>
+<div><label for="d2" id="l2">Check-out</label><input type="date" id="d2"></div>
+</div>
+<div class="row">
+<div><label for="type" id="l3">Type of stay</label><select id="type"></select></div>
+<div><label for="n" id="l4">Guests</label><input type="number" id="n" min="1" value="2"></div>
+</div>
+<label for="msg">Location, budget or other details</label><textarea id="msg" placeholder="e.g. Maitama or Wuse 2, two bedrooms, under ₦150,000 a night"></textarea>
+</div>
+<button class="btn" id="send" type="button">Send enquiry by email</button>
+<p class="note">Opens your email app with the details filled in.</p>
+</div>
+</div></div>
+
+<section id="stays"><div class="wrap">
+<div class="sec-head"><h2>Stays and property services</h2><p>From a weekend in a studio to a full shortlet operation, we match the property to your location, budget, guest count and amenities.</p></div>
+<div class="grid">
+<div class="item"><h3>Shortlet accommodation bookings</h3><p>Studios, apartments, terraces and duplexes for leisure, family, group, business and extended stays.</p></div>
+<div class="item"><h3>Property sourcing</h3><p>We identify properties for stays, rent or lease, or potential shortlet use, and coordinate enquiries and viewings where available.</p></div>
+<div class="item"><h3>Property setup and listing improvement</h3><p>Guest-readiness checklists, furnishing and presentation guidance, listing descriptions, amenity details and content planning.</p></div>
+<div class="item"><h3>Shortlet management support</h3><p>By agreed scope: booking enquiries, guest communication, check-in, cleaning and turnover, maintenance follow-up, vendor coordination and owner updates.</p></div>
+<div class="item"><h3>Marketing and owner support</h3><p>Shortlet promotion, social content, walkthrough planning and onboarding for owners exploring shortlet operations or investment.</p></div>
+</div></div></section>
+
+<section id="mobility" class="band"><div class="wrap">
+<div class="sec-head"><h2>Mobility services</h2><p>Pre-booked rides and vehicle hire for visitors, residents and companies. Every vehicle is subject to confirmed availability.</p></div>
+<div class="grid">
+<div class="item"><h3>Car rental and vehicle hire</h3><p>Daily, multi-day or extended hire, including premium vehicles and SUVs.</p><span class="hl">Mercedes-Benz GLE 350 · Toyota Prado</span></div>
+<div class="item"><h3>Chauffeur and private rides</h3><p>Personal-driver arrangements and point-to-point trips for city rides, shopping, meetings and dining.</p></div>
+<div class="item"><h3>Airport transfers</h3><p>Pick-up and drop-off between the airport and your accommodation, residence, office or another agreed destination.</p></div>
+<div class="item"><h3>Corporate and executive mobility</h3><p>Transport for business travellers, official engagements, visiting guests, scheduled trips and recurring needs.</p></div>
+<div class="item"><h3>Event and stay-related transport</h3><p>Rides for celebrations, conferences and special occasions, plus coordinated transport for guests who book a stay with Velton.</p></div>
+</div></div></section>
+
+<section id="process"><div class="wrap">
+<div class="sec-head"><h2>How it works</h2><p>A simple path from enquiry to completion.</p></div>
+<ol class="steps">
+<li><h3>Tell us your needs</h3><p>Share dates, location, budget and number of guests or passengers.</p></li>
+<li><h3>Receive suitable options</h3><p>We source properties or vehicles that fit, and explain what each includes.</p></li>
+<li><h3>Confirm the details</h3><p>Properties, vehicles and deliverables are confirmed individually before you commit.</p></li>
+<li><h3>We coordinate the rest</h3><p>Check-in, transfers and follow-up are handled so your stay runs smoothly.</p></li>
+</ol></div></section>
+
+<section id="about" class="band"><div class="wrap two">
+<div><h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem)">A service-led approach</h2>
+<p style="margin-top:14px">We prioritise responsive communication, practical coordination and options tailored to each client. Where needed, we work with property owners, hosts, agents, vehicle providers and service partners.</p>
+<p>Convenient coordination, professional communication, and stays and rides in one place.</p></div>
+<div><h3 style="font-size:1.3rem">Who we serve</h3>
+<div class="chips" style="--surface:#1B3050;--line:#2B4060;--ink:#F3F6F9"><span>Individuals</span><span>Families</span><span>Visitors</span><span>Corporate clients</span><span>Property owners</span><span>Shortlet operators</span></div></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap two">
+<div><h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem)">Let's connect</h2>
+<p style="margin-top:12px">Tell us what you are planning and we will come back with options.</p>
+<div class="cta" style="margin-top:20px"><a class="btn" href="mailto:veltonstaysandmobility@gmail.com">Email Velton</a><a class="btn ghost" href="#enquire">Use the enquiry form</a></div></div>
+<dl>
+<div><dt>Location</dt><dd>Abuja, Nigeria</dd></div>
+<div><dt>Email</dt><dd><a href="mailto:veltonstaysandmobility@gmail.com">veltonstaysandmobility@gmail.com</a></dd></div>
+<div><dt>Instagram and TikTok</dt><dd>@veltonstaysandmobility</dd></div>
+<div><dt>Registration</dt><dd>RC No. 9737709</dd></div>
+</dl></div></section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr">2026</span> Velton Stays &amp; Mobility</span><span>Hospitality, property and mobility · RC No. 9737709</span></div></footer>
+
+<script>
+(function(){
+var mode='stay';
+var tS=document.getElementById('t-stay'),tR=document.getElementById('t-ride');
+var $=function(i){return document.getElementById(i)};
+var stayTypes=['Studio','Apartment','Terrace','Duplex','Not sure yet'];
+var rideTypes=['Airport transfer','Chauffeur / private ride','Car hire','Corporate / executive','Event transport'];
+function fill(a){$('type').innerHTML=a.map(function(x){return '<option>'+x+'</option>'}).join('')}
+function set(m){
+mode=m;tS.setAttribute('aria-selected',m==='stay');tR.setAttribute('aria-selected',m==='ride');
+if(m==='stay'){$('l1').textContent='Check-in';$('l2').textContent='Check-out';$('l3').textContent='Type of stay';$('l4').textContent='Guests';fill(stayTypes)}
+else{$('l1').textContent='Pick-up / start date';$('l2').textContent='End date (if any)';$('l3').textContent='Service';$('l4').textContent='Passengers';fill(rideTypes)}
+}
+tS.onclick=function(){set('stay')};tR.onclick=function(){set('ride')};
+set('stay');
+$('send').onclick=function(){
+var l=[(mode==='stay'?'Stay enquiry':'Ride / hire enquiry'),'',
+'Name: '+($('name').value||'-'),
+(mode==='stay'?'Check-in: ':'Start: ')+($('d1').value||'-'),
+(mode==='stay'?'Check-out: ':'End: ')+($('d2').value||'-'),
+'Service: '+$('type').value,
+(mode==='stay'?'Guests: ':'Passengers: ')+$('n').value,
+'Details: '+($('msg').value||'-')];
+location.href='mailto:veltonstaysandmobility@gmail.com?subject='+encodeURIComponent('Velton '+(mode==='stay'?'stay':'ride')+' enquiry')+'&body='+encodeURIComponent(l.join('\n'));
+};
+$('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
