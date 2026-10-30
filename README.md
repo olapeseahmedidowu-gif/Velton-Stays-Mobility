@@ -1,2 +1,2 @@
 # Velton-Stays-Mobility
-website 
+Add a short description, such as “Responsive website for an Abuja shortlet and mobility company website 
